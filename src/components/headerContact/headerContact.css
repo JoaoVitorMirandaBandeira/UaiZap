@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+}
+.headerContact{
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+.logo-name{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    font-size: xx-large;
+}
