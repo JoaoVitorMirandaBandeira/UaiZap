@@ -46,3 +46,12 @@ main{
   height: 100vh;
   margin: auto;
 }
+
+.contacts{
+  height: 93vh;
+  background-color: #111B21;
+}
+
+.menu-contacts{
+  width: 25vw;
+}

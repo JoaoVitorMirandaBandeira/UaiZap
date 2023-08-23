@@ -5,7 +5,15 @@ function App() {
   return (
     <div className="App">
       <main>
-        <HeaderContact/>
+        <div className='menu-contacts'>
+          <HeaderContact />
+          <section className='contacts'>
+
+          </section>
+        </div>
+        <section className='main-chat'>
+
+        </section>
       </main>
 
     </div>
