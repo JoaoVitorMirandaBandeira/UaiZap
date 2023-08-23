@@ -45,13 +45,18 @@ main{
   width: 70vw;
   height: 100vh;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts{
-  height: 93vh;
+  flex-grow: 1;
   background-color: #111B21;
 }
 
 .menu-contacts{
   width: 25vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
