@@ -1,5 +1,6 @@
-import CardContact from '../components/cardContact/cardContact';
-import HeaderContact from '../components/headerContact/headerContact';
+import CardContact from '../components/cardContact/CardContact';
+import HeaderChat from '../components/headerChat/HeaderChat';
+import HeaderContact from '../components/headerContact/HeaderContact';
 import './App.css';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           </section>
         </div>
         <section className='main-chat'>
-
+            <HeaderChat/>
         </section>
       </main>
 

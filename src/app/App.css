@@ -46,7 +46,7 @@ main{
   height: 100vh;
   margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .contacts{
@@ -59,4 +59,9 @@ main{
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.main-chat{
+  width: 100%;
+  background-color: #61dafb;
 }

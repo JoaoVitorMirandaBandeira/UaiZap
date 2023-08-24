@@ -1,17 +1,3 @@
-.img-contact{
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.img-contact img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    max-width: 100%;
-}
-
 .card-contact{
     display: flex;
     align-items: center;
@@ -42,7 +28,7 @@
     width: 85%;
     text-align: center;
     margin: auto;
-    border: none; /* Remove a borda padrão */
+    border: none; 
     border-top: 3px solid #1F2930;
 }
 
