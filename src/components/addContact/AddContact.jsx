@@ -1,0 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { DivCicle } from "../staled-components/DivCicle";
+import style from'./addContact.module.css'
+
+export default function AddContact(){
+    return(
+        <DivCicle className={style.cardAdd}>
+            <FontAwesomeIcon icon={faPlus}/>
+        </DivCicle>
+    )
+}
