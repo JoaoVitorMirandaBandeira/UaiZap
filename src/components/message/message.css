@@ -1,0 +1,43 @@
+.you-message{
+    width: max-content;
+    max-width: 300px;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    color: white;
+    background-color: #283841;
+    border-radius: 5px;
+    text-align: justify;
+}
+.i-message{
+    width: max-content;
+    max-width: 300px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    color: white;
+    background-color: #005C4B;
+    border-radius: 5px;
+    text-align: justify;
+    right: 0;
+}
+
+.card-message{
+    width: 100%;
+    display: flex;
+    justify-content: end    ;
+}
+
+.message > p {
+    padding: 3px 0px;
+}
+.message-user{
+    padding-left:20px !important;
+    text-align: left;
+}
+.date-user{
+    text-align: end;
+    font-weight: 300;
+    font-size: small;
+}
+.name-user{
+    font-weight: 700;
+}   

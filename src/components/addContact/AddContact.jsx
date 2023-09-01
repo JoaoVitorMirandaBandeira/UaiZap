@@ -3,9 +3,9 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { DivCicle } from "../staled-components/DivCicle";
 import style from'./addContact.module.css'
 
-export default function AddContact(){
+export default function AddContact(props){
     return(
-        <DivCicle className={style.cardAdd}>
+        <DivCicle onClick={()=>{props.setNewPopup(true)}} className={style.cardAdd}>
             <FontAwesomeIcon icon={faPlus}/>
         </DivCicle>
     )

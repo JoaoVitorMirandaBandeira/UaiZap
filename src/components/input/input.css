@@ -1,0 +1,36 @@
+.input-message{
+    background-color: #202C33;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input-message > input {
+    height: 3vh;
+    width: 85%;
+    border: none;
+    border-radius: 10px;
+    background-color: #2A3942;
+    color: #9A9A9A;
+    padding: 0px 20px;
+}
+
+.input-message > button {
+    height: 3vh;
+    width: 5%;
+    border: none;
+    border-radius: 10px;
+    background-color: #005C4B;
+    color: black;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.input-message > button:active {
+    background-color: #008d73;
+}
