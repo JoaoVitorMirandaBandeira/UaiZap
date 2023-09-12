@@ -1,4 +1,5 @@
 import './message.css'
+import React from 'react'
 export default function Message (props){
     return(
         <div className={props.myMessage && 'card-message'}>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import React from 'react';
 import AddContact from '../components/addContact/AddContact';
 import CardContact from '../components/cardContact/CardContact';
 import HeaderChat from '../components/headerChat/HeaderChat';
@@ -11,7 +12,7 @@ import Popup from '../components/popup/Popup';
 function App() {
   const [message, setMessage] = useState([])
   const [persons, setPerson] = useState([])
-  const [session,setSession] = useState()
+  const [session,setSession] = useState({name:"",id: "",color:""})
   const [popup, setPopup] = useState(false)
 
   const addMessage = (newMessage) => {
@@ -41,7 +42,7 @@ function App() {
                   name={element.name}
                   userId={element.id}
                   color={element.color}
-                  isSelected={(element.id === session.id)}
+                  isSelected={(element && element.id === session.id)}
                   key={element.id}
                   lastMessage="Ola, Tudo bem!"
                   changeSession={alterSession}
@@ -60,7 +61,7 @@ function App() {
                 })
               }
             </div>
-            {session && <Input sendMessage={addMessage} session={session}/>}
+            {(session.id !== '')&& <Input sendMessage={addMessage} session={session}/>}
           </section>
         </main>
         {popup && <Popup addNewContact={addPerson} setNewPopup={statusPopup}/>}

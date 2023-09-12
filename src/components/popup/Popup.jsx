@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import React from 'react'
 import './popup.css'
 import { useState } from 'react'
 
@@ -42,7 +43,7 @@ export default function Popup(props) {
                         </div>
                         <div className='label-input'>
                             <label htmlFor="url">NOME:</label>
-                            <input className='popup-input' type="text" name='name' onChange={changeFormData} required />
+                            <input className='popup-input' type="text" name='name' onChange={changeFormData} maxLength={12} required />
                         </div>
                     </div>
                     <button type='submit' className='button-add'>Cadastrar</button>

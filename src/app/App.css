@@ -68,7 +68,7 @@ main{
   height: 87vh;
   max-height: 92vh;
   background-color: #0a151b;
-  background-image: url('../../public/bg.png');
+  background-image: url('../img/bg.png');
   background-size: contain;
   position: relative;
   display: flex;
