@@ -27,7 +27,15 @@ function App() {
   const alterSession = (newSession) => {
     setSession(newSession)
   }
-
+  const deleteMessage = (messageId) => {
+    const indexMessage = message.findIndex((element) => {
+        return messageId === element.messageId
+    })
+    const newArray = [...message]
+    newArray.splice(indexMessage,1)
+    setMessage(newArray)
+    console.log(newArray)
+  }
 
   return (
       <div className="App">
@@ -57,7 +65,7 @@ function App() {
             <div className='chat'>
               {
                 message.map(element => {
-                  return <Message color={element.color} name={element.name} myMessage={(element.id === session.id)?true:false} text={element.text} />
+                  return <Message  message={element} myMessage={(element.id === session.id)?true:false} onClickDelete={deleteMessage} />
                 })
               }
             </div>

@@ -28,9 +28,11 @@
 
 .message > p {
     padding: 3px 0px;
+    text-align: justify;
 }
+
 .message-user{
-    padding-left:20px !important;
+    padding-left:10px !important;
     text-align: left;
 }
 .date-user{
@@ -40,4 +42,20 @@
 }
 .name-user{
     font-weight: 700;
-}   
+} 
+.footer-message{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}  
+.trash{
+    font-size: 12px;
+    
+    color: #FFFFFF;
+}
+.button-trash{
+    background-color: transparent;
+    border: none;
+    margin-right: 25px;
+    cursor: pointer;
+}

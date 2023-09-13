@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 import './popup.css'
+import {getRandomArbitrary} from '../../utils/getRandomArbitrary'
 import { useState } from 'react'
 
 export default function Popup(props) {
@@ -12,9 +13,6 @@ export default function Popup(props) {
             ...prevData,
             [name]: value
         }))
-    }
-    const getRandomArbitrary = (min, max) => {
-        return parseInt(Math.random() * (max - min) + min)
     }
     const gerarCorHexadecimal = () => {
         return '#' + parseInt((Math.random() * 0xFFFFFF))
