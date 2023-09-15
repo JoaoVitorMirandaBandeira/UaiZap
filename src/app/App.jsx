@@ -28,13 +28,16 @@ function App() {
     setSession(newSession)
   }
   const deleteMessage = (messageId) => {
-    const indexMessage = message.findIndex((element) => {
-        return messageId === element.messageId
-    })
-    const newArray = [...message]
-    newArray.splice(indexMessage,1)
-    setMessage(newArray)
-    console.log(newArray)
+    const accept = window.confirm("Tem certeza que deseja excluir?")
+    if(accept){
+      const indexMessage = message.findIndex((element) => {
+          return messageId === element.messageId
+      })
+      const newArray = [...message]
+      newArray.splice(indexMessage,1)
+      setMessage(newArray)
+      console.log(newArray)
+    }
   }
 
   return (
@@ -65,7 +68,7 @@ function App() {
             <div className='chat'>
               {
                 message.map(element => {
-                  return <Message  message={element} myMessage={(element.id === session.id)?true:false} onClickDelete={deleteMessage} />
+                  return <Message  message={element} key={element.messageId} myMessage={(element.id === session.id)?true:false} onClickDelete={deleteMessage} />
                 })
               }
             </div>
