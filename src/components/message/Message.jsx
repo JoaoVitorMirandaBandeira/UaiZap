@@ -12,7 +12,7 @@ export default function Message(props) {
                     {props.myMessage && <button className='button-trash' onClick={() => props.onClickDelete(props.message.messageId)}>
                         <FontAwesomeIcon icon={faTrashCan} className='trash' />
                     </button>}
-                    <p className='date-user'>19:30</p>
+                    <p className='date-user'>{props.message.hours}</p>
                 </div>
             </div>
         </div>

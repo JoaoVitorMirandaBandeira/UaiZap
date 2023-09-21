@@ -3,17 +3,12 @@
     align-items: center;
     color: #9A9A9A;
     padding: 15px 25px;
+    cursor: pointer;
 }
 
 .name-text{
     font-size: 1.7rem;
     font-weight: 600;
-}
-
-.message-text{
-    font-size: smaller;
-    font-weight: 300;
-    color: #7A7A7A;
 }
 
 .card-text{

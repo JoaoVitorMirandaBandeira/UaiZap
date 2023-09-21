@@ -49,13 +49,63 @@ main{
   margin: auto;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
-.contacts{
+@media (max-width: 900px){
+  main{
+    background-color: #202C33;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/*.contacts{
   flex-grow: 1;
   background-color: #111B21;
+}*/
+.contacts {
+  flex-grow: 1;
+  background-color: #111B21;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.5s ease;
 }
 
+/* @media (max-width: 900px) {
+  .contacts {
+    width: 250px;
+    position: fixed;
+    top: 8vh;
+    left: 0;
+    height: 100%;
+    z-index: 600;
+  }
+  .menu-contacts{
+    width: 16vw !important;
+  }
+
+} */
+
+/* @media (min-width: 751px) {
+  .contacts {
+    width: 250px; 
+  }
+}
+ */
+/* 
+.contacts.visible {
+  width: 250px; 
+}
+
+.contacts.hidden {
+  width: 0;
+  overflow: hidden;
+}
+ */
 .menu-contacts{
   width: 25vw;
   height: 100vh;

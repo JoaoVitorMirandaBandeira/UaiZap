@@ -9,11 +9,14 @@ import './App.css';
 import Input from '../components/input/Input';
 import Popup from '../components/popup/Popup';
 
+import LastMessage from '../components/lastMessage/LastMessage';
+
 function App() {
   const [message, setMessage] = useState([])
   const [persons, setPerson] = useState([])
   const [session,setSession] = useState({name:"",id: "",color:""})
   const [popup, setPopup] = useState(false)
+  const [statusBar,setStatusBar] = useState(true)
 
   const addMessage = (newMessage) => {
     setMessage([...message, newMessage])
@@ -39,13 +42,23 @@ function App() {
       console.log(newArray)
     }
   }
+  const lastMessageUser = (userId) => {
+    const lastMessage = message.findLast((element) => {
+      return element.id === userId
+    })
+    console.log(lastMessage)
+    if(lastMessage) return(<LastMessage text ={lastMessage.text}/>) 
+  }
+  const toggleContacts = () => {
+    setStatusBar(!statusBar)
+  }
 
   return (
       <div className="App">
         <main>
           <div className='menu-contacts'>
-            <HeaderContact />
-            <section className='contacts'>
+            <HeaderContact activeBarContacts={toggleContacts} overflow={statusBar ? 'visible' : 'hidden'} />
+            <section className={`contacts ${statusBar ? 'visible' : 'hidden'}`}>
               {
                 persons.map((element) => {
                   return <CardContact
@@ -55,9 +68,8 @@ function App() {
                   color={element.color}
                   isSelected={(element && element.id === session.id)}
                   key={element.id}
-                  lastMessage="Ola, Tudo bem!"
                   changeSession={alterSession}
-                />
+                >{lastMessageUser(element.id)}</CardContact>
                 })
               }
               <AddContact setNewPopup={statusPopup}/>

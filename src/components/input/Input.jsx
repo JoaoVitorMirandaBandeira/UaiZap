@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import {getRandomArbitrary} from '../../utils/getRandomArbitrary'
+import { getHoursFormatted } from '../../utils/getHoursFormatted'
+
 export default function Input(props){
     const [message,setMessage] = useState('')
 
@@ -13,7 +15,8 @@ export default function Input(props){
             messageId: getRandomArbitrary(0,1000),
             color: props.session.color,
             name: props.session.name,
-            text:message
+            text:message,
+            hours: getHoursFormatted()
         };
         if(message !== ''){
             props.sendMessage(newMessage);

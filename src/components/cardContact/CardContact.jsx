@@ -17,7 +17,7 @@ export default function CardContact(props) {
                 </DivCicle>
                 <div className="card-text">
                     <p className="name-text">{props.name}</p>
-                    <p className="message-text"><FontAwesomeIcon icon={faCheckDouble} /> {props.lastMessage}</p>
+                    {props.children}
                 </div>
             </div>
             <hr className="line-break" />
