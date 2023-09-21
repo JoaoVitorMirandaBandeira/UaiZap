@@ -21,7 +21,7 @@ Siga estas etapas para executar o projeto em sua máquina:
 Clone o repositório do UaiZap para sua máquina usando o Git:
 
 ```bash
-git clone [https://github.com/JoaoVitorMirandaBandeira/UaiZap.git](https://github.com/JoaoVitorMirandaBandeira/UaiZap.git)
+git clone https://github.com/JoaoVitorMirandaBandeira/UaiZap.git
 ```
 
 ### Instale as Dependências
