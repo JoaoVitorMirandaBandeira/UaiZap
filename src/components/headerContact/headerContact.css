@@ -8,25 +8,23 @@
     align-items: center;
     justify-content: space-between;
     height: 8vh;
-    padding: 0px 15px;
-    width: calc(20vw - 30px) !important;
+    padding: 0px 5px;
     transition: width 0.5s ease;
 }
-/* @media (max-width: 900px) {
-    .headerContact {
-      width: 250vw;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 8vh;
-      z-index: 700;
-      padding: 0px 0px;
-    }
-    .headerContact.visible {
-      width: 250px !important; 
-    }
-    
-  } */
+
+.headerContact-overflow {
+  background-color: #202C33;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  top: 0;
+  left: 0;
+  height: 8vh;
+  z-index: 700;
+  padding: 0px 0px;
+}
 
 .logo-name{
     display: flex;
@@ -36,12 +34,3 @@
 .icon{
     font-size: xx-large;
 }
-
-/* .headerContact.visible {
-    width: calc(20vw - 30px) !important;
-  }
-  
-.headerContact.hidden {
-    width: 16vw;
-    overflow: hidden;
-  } */

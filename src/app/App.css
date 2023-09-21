@@ -52,7 +52,7 @@ main{
   position: relative;
 }
 
-@media (max-width: 900px){
+@media (max-width: 1100px){
   main{
     background-color: #202C33;
     width: 100vw;
@@ -63,19 +63,19 @@ main{
   }
 }
 
-/*.contacts{
-  flex-grow: 1;
-  background-color: #111B21;
-}*/
 .contacts {
   flex-grow: 1;
   background-color: #111B21;
   display: flex;
   flex-direction: column;
-  transition: width 0.5s ease;
+  /*transition: width 0.5s ease;*/
+  width: 250px;
+  top: 9vh;
+  left: 0;
+  z-index: 700;
 }
 
-/* @media (max-width: 900px) {
+ @media (max-width: 900px) {
   .contacts {
     width: 250px;
     position: fixed;
@@ -85,32 +85,24 @@ main{
     z-index: 600;
   }
   .menu-contacts{
-    width: 16vw !important;
+    width: 80px !important;
   }
 
-} */
-
-/* @media (min-width: 751px) {
-  .contacts {
-    width: 250px; 
-  }
 }
- */
-/* 
+
 .contacts.visible {
-  width: 250px; 
+  width: 300px; 
 }
 
 .contacts.hidden {
-  width: 0;
-  overflow: hidden;
+  width: max-content;
 }
- */
 .menu-contacts{
-  width: 25vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+
 }
 
 .chat{

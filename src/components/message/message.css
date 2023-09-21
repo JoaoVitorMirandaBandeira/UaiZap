@@ -1,6 +1,6 @@
 .you-message{
     width: max-content;
-    max-width: 300px;
+    max-width: 250px;
     padding: 5px 10px;
     margin: 10px 10px;
     color: white;
@@ -11,7 +11,7 @@
 }
 .i-message{
     width: max-content;
-    max-width: 300px;
+    max-width: 250px;
     padding: 10px 10px;
     margin: 10px 10px;
     color: white;

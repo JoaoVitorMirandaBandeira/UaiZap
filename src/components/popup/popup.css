@@ -11,11 +11,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
 }
 
 .popup-container{
-    width: 20%;
-    height: 22%;
+    width: 300px;
+    height: 200px;
     background-color: #2A3841;
     color: #d4d4d4;
     border-radius: 10px;

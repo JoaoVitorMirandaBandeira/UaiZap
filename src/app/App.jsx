@@ -57,7 +57,7 @@ function App() {
       <div className="App">
         <main>
           <div className='menu-contacts'>
-            <HeaderContact activeBarContacts={toggleContacts} overflow={statusBar ? 'visible' : 'hidden'} />
+            <HeaderContact activeBarContacts={toggleContacts} overflow={statusBar} />
             <section className={`contacts ${statusBar ? 'visible' : 'hidden'}`}>
               {
                 persons.map((element) => {
@@ -69,6 +69,7 @@ function App() {
                   isSelected={(element && element.id === session.id)}
                   key={element.id}
                   changeSession={alterSession}
+                  overflow={statusBar}
                 >{lastMessageUser(element.id)}</CardContact>
                 })
               }

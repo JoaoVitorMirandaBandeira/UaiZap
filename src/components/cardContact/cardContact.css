@@ -5,6 +5,13 @@
     padding: 15px 25px;
     cursor: pointer;
 }
+.card-contact-min{
+    display: flex;
+    align-items: center;
+    color: #9A9A9A;
+    padding: 15px 5px;
+    cursor: pointer;
+}
 
 .name-text{
     font-size: 1.7rem;
@@ -22,7 +29,7 @@
 .line-break{
     width: 85%;
     text-align: center;
-    margin: auto;
+    margin: 0px auto;
     border: none; 
     border-top: 3px solid #1F2930;
 }

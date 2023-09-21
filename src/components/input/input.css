@@ -26,6 +26,15 @@
     color: black;
 }
 
+@media (max-width: 900px){
+    .input-message > button {
+        width: 10%;
+    }
+    .input-message > input {
+    width: 65%;
+}
+}
+
 input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;

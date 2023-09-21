@@ -11,7 +11,9 @@ export default function CardContact(props) {
     }
     return (
         <>
-            <div className="card-contact" style={{backgroundColor: (props.isSelected?'rgb(0 0 0 / 64%)':"transparent")}} onClick={sendSession}>
+           {props.overflow && 
+           <>
+           <div className="card-contact" style={{backgroundColor: (props.isSelected?'rgb(0 0 0 / 64%)':"transparent")}} onClick={sendSession}>
                 <DivCicle>
                     <ImageCicle src={props.img} alt="Imagem de perfil de usuario" />
                 </DivCicle>
@@ -20,7 +22,12 @@ export default function CardContact(props) {
                     {props.children}
                 </div>
             </div>
-            <hr className="line-break" />
+            <hr className="line-break" /> </>}
+           {!props.overflow && <div className="card-contact-min" style={{backgroundColor: (props.isSelected?'rgb(0 0 0 / 64%)':"transparent")}} onClick={sendSession}>
+                <DivCicle>
+                    <ImageCicle src={props.img} alt="Imagem de perfil de usuario" />
+                </DivCicle>
+            </div> }
         </>
     )
 }
