@@ -2,6 +2,8 @@
 
 O UaiZap é um aplicativo de chat de mensagens desenvolvido em React que permite a criação de grupos onde você pode adicionar pessoas, associar URLs de imagens e nomes às pessoas e trocar mensagens dentro desses grupos.
 
+Link: https://thirsty-grain.surge.sh/
+
 ## Tecnologias Utilizadas
 
 - **React**: Uma biblioteca JavaScript para a construção de interfaces de usuário.
